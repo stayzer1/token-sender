@@ -29,7 +29,7 @@ def send_eth(to_address, amount_in_eth):
 
         # Подписываем и отправляем транзакцию
         signed_txn = w3.eth.account.sign_transaction(transaction, SENDER_PRIVATE_KEY)
-        tx_hash = w3.eth.send_raw_transaction(signed_txn.raw_transaction)
+        tx_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
 
         # Ждем подтверждения транзакции
         tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
