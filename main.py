@@ -2,10 +2,10 @@ from web3 import Web3
 import time
 
 # Подключаемся к Sepolia testnet
-w3 = Web3(Web3.HTTPProvider('https://unichain-sepolia.infura.io/v3/656c3f5d53c6415eac13761f9e552739'))  # Замените на ваш Infura Project ID
+w3 = Web3(Web3.HTTPProvider('https://unichain-sepolia-rpc.publicnode.com'))  # Замените на ваш Infura Project ID
 
 # Конфигурация
-SENDER_PRIVATE_KEY = 'c09f46e826533af1c4113e7c5e35c7c5ace25e291ac93a2fe4e719f9567c8697'  # Приватный ключ отправителя
+SENDER_PRIVATE_KEY = 'example'  # Приватный ключ отправителя
 AMOUNT_TO_SEND = 0.004  # Количество ETH для отправки (в ETH)
 GAS_PRICE = w3.eth.gas_price
 GAS_LIMIT = 21000  # Стандартный лимит газа для простой транзакции
